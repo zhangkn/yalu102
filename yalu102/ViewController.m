@@ -116,6 +116,12 @@ struct not_essers_ipc_object {
 #define IKOT_IOKIT_CONNECT 29
 #define IKOT_CLOCK 25
 
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self yolo:nil];
+}
+
 char dt[128];
 - (IBAction)yolo:(UIButton*)sender
 {

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+launchctl unload /System/Library/LaunchDaemons
+
+ls /etc/rc.d | while read a; do /etc/rc.d/"$a"; done
+
+launchctl load /Library/LaunchDaemons
+launchctl load /System/Library/LaunchDaemons

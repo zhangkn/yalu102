@@ -11,7 +11,12 @@
 #import <mach/mach.h>
 #import "devicesupport.h"
 
-#import <IOKit/IOKitLib.h>
+//#import <IOKit/IOKitLib.h>   我自己已经引入了头文件  devzkndeMacBook-Pro:include devzkn$ ls -lrt /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework
+
+// /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework/Headers
+///opt/iOSOpenDev/include
+#import "IOKitLib.h"
+
 #import <dlfcn.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
